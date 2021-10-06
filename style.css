@@ -35,7 +35,7 @@ body {
 /* first nav bar styling */
 .firstnav,
 .secondnav,.advertisement,.gearup,
-.trending,.featured {
+.trending,.label {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
@@ -68,7 +68,7 @@ body {
 }
 
 /* second nav bar styling */
-.secondnav,.trending,.featured {
+.secondnav,.trending,.label {
   background-color: #fff;
   height: 58px;
 }
@@ -183,6 +183,7 @@ body {
   border-radius: 20px;
 }
 
+/* Section with 3 columns or more */
 .gearup{
   background-color: #fff;
   font-size: 1.5em;
@@ -239,19 +240,19 @@ body {
   margin-bottom: 15px;
 }
 
-.container4 .card .image__container .gearup__image{
+.container4 .card .image__container .image{
   width: 30vw;
   object-fit: contain;
 }
 
-.container4 .gearup__info{
+.container4 .info{
   max-width: 30vw;
   display: column;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.container4 .gearup__info .firstrow__info{
+.container4 .info .firstrow{
   display:flex;
   justify-content:space-between;
   margin-bottom: 5px;
@@ -260,7 +261,7 @@ body {
   font-weight:500;
 }
 
-.gearup__category{
+.category{
   color: #757575;
   font-size:0.8rem;
 }
@@ -273,11 +274,11 @@ body {
 }
 
 .image__trending .image{
-  width:45vw;
+  width:46vw;
   object-fit: contain;
 }
 
-.trending,.featured{
+.trending,.label{
   font-size:1.5em;
   margin-top: 2em;
 }
