@@ -34,7 +34,7 @@ body {
 
 /* first nav bar styling */
 .firstnav,
-.secondnav,.advertisement {
+.secondnav,.advertisement,.gearup {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
@@ -181,3 +181,39 @@ body {
   padding: 10px 30px;
   border-radius: 20px;
 }
+
+.gearup{
+  background-color: #fff;
+  font-size: 1.5em;
+  padding: 30px 45px;
+}
+
+.gearup .btn__choose{
+  display: flex;
+  gap: 8px;
+}
+
+.gearup .btn__choose .rightarrow, 
+.gearup .btn__choose .leftarrow{
+  border-radius: 50%;
+  background-color:#f5f5f5;
+  padding:4px 10px;
+  border-color:transparent;
+}
+
+.rightarrow .svg-icon, 
+.leftarrow .svg-icon {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill:black;
+}
+
+/* .svg-icon circle {
+  stroke: black;
+  stroke-width: 1;
+} */
