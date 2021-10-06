@@ -213,7 +213,55 @@ body {
   fill:black;
 }
 
-/* .svg-icon circle {
+.svg-icon circle {
   stroke: black;
   stroke-width: 1;
-} */
+}
+
+.container4 {
+ display: grid;
+ padding:0px 45px;
+ grid-template-columns: repeat(3,30%);
+ grid-gap:3em;
+}
+
+.container4 .card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.container4 .card .image__container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.container4 .card .image__container .gearup__image{
+  width: 30vw;
+  object-fit: contain;
+}
+
+.container4 .gearup__info{
+  max-width: 30vw;
+  display: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container4 .gearup__info .firstrow__info{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: 5px;
+  color:#111;
+  font-size:1rem;
+  font-weight:500;
+}
+
+.gearup__category{
+  color: #757575;
+  font-size:0.8rem;
+}
+
+
