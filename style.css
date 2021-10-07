@@ -34,8 +34,11 @@ body {
 
 /* first nav bar styling */
 .firstnav,
-.secondnav,.advertisement,.gearup,
-.trending,.label {
+.secondnav,
+.advertisement,
+.gearup,
+.trending,
+.label {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
@@ -68,7 +71,9 @@ body {
 }
 
 /* second nav bar styling */
-.secondnav,.trending,.label {
+.secondnav,
+.trending,
+.label {
   background-color: #fff;
   height: 58px;
 }
@@ -136,45 +141,45 @@ body {
 }
 
 /* after nav bar*/
-.advertisement{
+.advertisement {
   height: 50px;
 }
 
 /* banner section*/
-.container2{
-  display:flex;
-  background-color:#fff;
+.container2 {
+  display: flex;
+  background-color: #fff;
   align-items: center;
   padding: 1.7em 45px;
   justify-content: space-between;
 }
 
-.container2__image{
+.container2__image {
   width: 92vw;
   object-fit: contain;
 }
 
-.container3{
+.container3 {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-.container3 h1{
+.container3 h1 {
   font-size: 4em;
   color: #111111;
   letter-spacing: -6px;
   font-family: Neue Arial, Helvetica, sans-serif;
 }
 
-.container3 p{
+.container3 p {
   margin: 1em;
   font-size: 1rem;
 }
 
-.container3 .btn-shop{
-  font-size:1em;
+.container3 .btn-shop {
+  font-size: 1em;
   margin-top: 1rem;
   margin-bottom: 4rem;
   background: #111111;
@@ -184,26 +189,26 @@ body {
 }
 
 /* Section with 3 columns or more */
-.gearup{
+.gearup {
   background-color: #fff;
   font-size: 1.5em;
   padding: 30px 45px;
 }
 
-.gearup .btn__choose{
+.gearup .btn__choose {
   display: flex;
   gap: 8px;
 }
 
-.gearup .btn__choose .rightarrow, 
-.gearup .btn__choose .leftarrow{
+.gearup .btn__choose .rightarrow,
+.gearup .btn__choose .leftarrow {
   border-radius: 50%;
-  background-color:#f5f5f5;
-  padding:4px 10px;
-  border-color:transparent;
+  background-color: #f5f5f5;
+  padding: 4px 10px;
+  border-color: transparent;
 }
 
-.rightarrow .svg-icon, 
+.rightarrow .svg-icon,
 .leftarrow .svg-icon {
   width: 1.8em;
   height: 1.8em;
@@ -212,7 +217,7 @@ body {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill:black;
+  fill: black;
 }
 
 .svg-icon circle {
@@ -221,65 +226,108 @@ body {
 }
 
 .container4 {
- display: grid;
- padding:0px 45px;
- grid-template-columns: repeat(3,30%);
- grid-gap:3em;
+  display: grid;
+  padding: 0px 45px;
+  grid-auto-columns: 30%;
+  grid-auto-flow: column;
+  grid-gap: 3em;
+  overflow-x: scroll;
 }
 
-.container4 .card{
+.container4::-webkit-scrollbar {
+  height: 0.7em;
+}
+
+.container4::-webkit-scrollbar-track {
+  background-color: white;
+  margin-inline: 45px;
+}
+
+.container4::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 50vh;
+}
+
+.container4:hover::-webkit-scrollbar-thumb {
+  background-color: #787474;
+  border-radius: 50vh;
+}
+
+.container4 .card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
-.container4 .card .image__container{
+.container4 .card .image__container {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.container4 .card .image__container .image{
+.container4 .card .image__container .image {
   width: 30vw;
   object-fit: contain;
 }
 
-.container4 .info{
+.container4 .info {
   max-width: 30vw;
   display: column;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.container4 .info .firstrow{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom: 5px;
-  color:#111;
-  font-size:1rem;
-  font-weight:500;
-}
-
-.category{
-  color: #757575;
-  font-size:0.8rem;
-}
-
-.image__trending{
+.container4 .info .firstrow {
   display: flex;
-  align-items:center;
-  padding:0 45px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.category {
+  color: #757575;
+  font-size: 0.8rem;
+}
+
+.image__trending {
+  display: flex;
+  align-items: center;
+  padding: 0 45px;
   gap: 10px;
 }
 
-.image__trending .image{
-  width:46vw;
+.image__trending .image {
+  width: 46vw;
   object-fit: contain;
 }
 
-.trending,.label{
-  font-size:1.5em;
+.trending,
+.label {
+  font-size: 1.5em;
   margin-top: 2em;
 }
 
+/* Item part below more nike and before footer */
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(4, 12%);
+  justify-content: center;
+  padding: 0 45px;
+  margin: 3em;
+  font-size: 0.8em;
+}
+
+.category__paragraph {
+  margin-bottom: 1.5em;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #757575;
+  font-weight: 500;
+}
