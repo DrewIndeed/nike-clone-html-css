@@ -34,7 +34,8 @@ body {
 
 /* first nav bar styling */
 .firstnav,
-.secondnav,.advertisement {
+.secondnav,.advertisement,.gearup,
+.trending,.label {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
@@ -67,7 +68,7 @@ body {
 }
 
 /* second nav bar styling */
-.secondnav {
+.secondnav,.trending,.label {
   background-color: #fff;
   height: 58px;
 }
@@ -139,6 +140,7 @@ body {
   height: 50px;
 }
 
+/* banner section*/
 .container2{
   display:flex;
   background-color:#fff;
@@ -151,3 +153,133 @@ body {
   width: 92vw;
   object-fit: contain;
 }
+
+.container3{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.container3 h1{
+  font-size: 4em;
+  color: #111111;
+  letter-spacing: -6px;
+  font-family: Neue Arial, Helvetica, sans-serif;
+}
+
+.container3 p{
+  margin: 1em;
+  font-size: 1rem;
+}
+
+.container3 .btn-shop{
+  font-size:1em;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  background: #111111;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+/* Section with 3 columns or more */
+.gearup{
+  background-color: #fff;
+  font-size: 1.5em;
+  padding: 30px 45px;
+}
+
+.gearup .btn__choose{
+  display: flex;
+  gap: 8px;
+}
+
+.gearup .btn__choose .rightarrow, 
+.gearup .btn__choose .leftarrow{
+  border-radius: 50%;
+  background-color:#f5f5f5;
+  padding:4px 10px;
+  border-color:transparent;
+}
+
+.rightarrow .svg-icon, 
+.leftarrow .svg-icon {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill:black;
+}
+
+.svg-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.container4 {
+ display: grid;
+ padding:0px 45px;
+ grid-template-columns: repeat(3,30%);
+ grid-gap:3em;
+}
+
+.container4 .card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.container4 .card .image__container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.container4 .card .image__container .image{
+  width: 30vw;
+  object-fit: contain;
+}
+
+.container4 .info{
+  max-width: 30vw;
+  display: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container4 .info .firstrow{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: 5px;
+  color:#111;
+  font-size:1rem;
+  font-weight:500;
+}
+
+.category{
+  color: #757575;
+  font-size:0.8rem;
+}
+
+.image__trending{
+  display: flex;
+  align-items:center;
+  padding:0 45px;
+  gap: 10px;
+}
+
+.image__trending .image{
+  width:46vw;
+  object-fit: contain;
+}
+
+.trending,.label{
+  font-size:1.5em;
+  margin-top: 2em;
+}
+
